@@ -1,0 +1,6 @@
+# Extensions
+*.log
+*.DS_Store
+# Directories
+node_modules
+dist

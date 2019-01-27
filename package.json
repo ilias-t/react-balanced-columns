@@ -1,0 +1,46 @@
+{
+  "name": "react-balanced-columns",
+  "version": "1.0.0",
+  "description": "A set of columns that self balance",
+  "main": "dist/index",
+  "typings": "dist/index",
+  "scripts": {
+    "build": "webpack",
+    "lint": "eslint src/**/*",
+    "lint:fix": "eslint src/**/* --fix",
+    "test": "npm run lint",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "Ilias Tsangaris",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^16.7.21",
+    "@types/react-dom": "^16.0.11",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "webpack-cli": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@storybook/addon-actions": "^4.1.11",
+    "@storybook/addon-info": "^4.1.11",
+    "@storybook/addon-links": "^4.1.11",
+    "@storybook/addons": "^4.1.11",
+    "@storybook/react": "^4.1.11",
+    "@types/storybook__react": "^4.0.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.16.1",
+    "react-docgen-typescript-loader": "^3.0.1",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^3.2.4",
+    "typescript-eslint-parser": "^22.0.0"
+  }
+}
