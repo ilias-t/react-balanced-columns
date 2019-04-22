@@ -1,6 +1,6 @@
 {
   "name": "react-balanced-columns",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of columns that self balance",
   "main": "dist/index",
   "typings": "dist/index",
@@ -16,9 +16,7 @@
   },
   "author": "Ilias Tsangaris",
   "license": "ISC",
-  "dependencies": {
-    "@types/react": "^16.8.14",
-    "@types/react-dom": "^16.8.4",
+  "peerDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
@@ -30,6 +28,8 @@
     "@storybook/addon-links": "^5.0.10",
     "@storybook/addons": "^5.0.10",
     "@storybook/react": "^5.0.10",
+    "@types/react": "^16.8.14",
+    "@types/react-dom": "^16.8.4",
     "@types/storybook__addon-knobs": "^5.0.0",
     "@types/storybook__react": "^4.0.1",
     "@typescript-eslint/parser": "^1.7.0",
