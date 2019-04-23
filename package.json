@@ -1,19 +1,19 @@
 {
   "name": "react-balanced-columns",
   "description": "Columns that self balance",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "Ilias Tsangaris",
   "license": "ISC",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "verification": "npm run lint",
+    "prepare": "npm run verification && npm run build",
     "lint": "eslint src/**/*",
     "lint:fix": "eslint src/**/* --fix",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "verification": "npm run lint",
-    "prepublish": "npm run verification && npm run build"
+    "build-storybook": "build-storybook"
   },
   "husky": {
     "hooks": {
