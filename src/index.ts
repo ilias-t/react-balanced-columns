@@ -1,3 +1,1 @@
-import BalancedColumns from './components/BalancedColumns';
-
-export default { BalancedColumns };
+export { default as BalancedColumns } from './components/BalancedColumns';

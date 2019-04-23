@@ -1,8 +1,5 @@
 {
-  "extends": [
-    "airbnb",
-    "plugin:import/typescript"
-  ],
+  "extends": ["airbnb", "plugin:import/typescript", "prettier"],
   "env": {
     "browser": true,
     "es6": true,
@@ -10,8 +7,8 @@
   },
   "parser": "typescript-eslint-parser",
   "parserOptions": {
-      "jsx": true,
-      "useJSXTextNode": true
+    "jsx": true,
+    "useJSXTextNode": true
   },
   "settings": {
     "import/extensions": [".ts", ".tsx"],
@@ -27,6 +24,10 @@
   },
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
-    "import/no-extraneous-dependencies": [1, { "devDependencies": [".storybook/**", "/stories/**"] }]
+    "import/no-extraneous-dependencies": [
+      1,
+      { "devDependencies": [".storybook/**", "/stories/**"] }
+    ],
+    "import/prefer-default-export": 0
   }
 }

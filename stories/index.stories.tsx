@@ -1,9 +1,9 @@
-import * as React from 'react';
+import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { withKnobs, number } from '@storybook/addon-knobs';
 
-import BalancedColumns from '../src/components/BalancedColumns';
+import { BalancedColumns } from '../src';
 
 const balancedColumnsStories = storiesOf('BalancedColumns', module);
 balancedColumnsStories.addDecorator(withKnobs);
@@ -12,6 +12,7 @@ balancedColumnsStories.add('example', () => (
     maxColumns={number('maxColumns', 3)}
     minRowBreakpoint={number('minRowBreakpoint', 4)}
   >
+    {/* Generate an array of specified length */}
     {Array.from({ length: number('itemCount', 12) }, (_, idx) => (
       <span
         // Ideally a unique ID

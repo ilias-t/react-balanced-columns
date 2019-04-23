@@ -34,7 +34,10 @@ function BalancedColumns(props: BalancedColumnsProps) {
       // Children do not completely fill the first column
       return children;
     }
-    const countPerRow = Math.max(Math.ceil(children.length / maxColumns), minRowBreakpoint);
+    const countPerRow = Math.max(
+      Math.ceil(children.length / maxColumns),
+      minRowBreakpoint,
+    );
 
     if (columnNum === maxColumns - 1) {
       // It's the last row, fill the remainder
@@ -48,10 +51,11 @@ function BalancedColumns(props: BalancedColumnsProps) {
     return children.slice(start, end);
   }
 
-  const {
-    children, columnWidth, minRowBreakpoint, maxColumns,
-  } = props;
-  const columnCount = Math.min(Math.ceil(children.length / minRowBreakpoint), maxColumns);
+  const { children, columnWidth, minRowBreakpoint, maxColumns } = props;
+  const columnCount = Math.min(
+    Math.ceil(children.length / minRowBreakpoint),
+    maxColumns,
+  );
   return (
     <div style={getTableStyle()}>
       {Array.from({ length: columnCount }, (_, idx) => (
@@ -66,4 +70,4 @@ function BalancedColumns(props: BalancedColumnsProps) {
   );
 }
 
-export default BalancedColumns;
+export default React.memo(BalancedColumns);
